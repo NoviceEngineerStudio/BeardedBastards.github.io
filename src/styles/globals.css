@@ -33,10 +33,10 @@
 
     --color-secondary: #33441d;
     --color-secondary-dark: #19220f;
-    --color-secondary-light: #36451e;
+    --color-secondary-light: #577032;
 
-    --text-2xl: 3.500rem;
-    --text-xl: 3.375rem;
+    --text-2xl: 5.000rem;
+    --text-xl: 2.250rem;
     --text-lg: 1.500rem;
     --text-md: 1.000rem;
     --text-sm: 0.875rem;
@@ -50,6 +50,11 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+@media screen and (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
 }
 
 html, body {
@@ -70,12 +75,16 @@ html, body {
 .text-primary { color: var(--color-primary); }
 .text-secondary { color: var(--color-secondary); }
 
-.text-2xl { font-size: var(--text-2xl); }
-.text-xl { font-size: var(--text-xl); }
-.text-lg { font-size: var(--text-lg); }
-.text-md { font-size: var(--text-md); }
-.text-sm { font-size: var(--text-sm); }
-.text-xs { font-size: var(--text-xs); }
+.text-2xl { font-size: var(--text-2xl) !important; }
+.text-xl { font-size: var(--text-xl) !important; }
+.text-lg { font-size: var(--text-lg) !important; }
+.text-md { font-size: var(--text-md) !important; }
+.text-sm { font-size: var(--text-sm) !important; }
+.text-xs { font-size: var(--text-xs) !important; }
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
 
 .font-decor { font-family: var(--font-decor); }
 .font-heading { font-family: var(--font-heading); }
@@ -85,5 +94,47 @@ html, body {
 .weight-normal { font-weight: normal; }
 .weight-bold { font-weight: bold; }
 
+.text-shadow { text-shadow: 0 0.5rem 1rem #00000060; }
+.box-shadow { box-shadow: 0 0.5rem 1rem #00000060; }
+
 .rounded { border-radius: 16px; }
 .rounded-full { border-radius: 50%; }
+
+.btn {
+    border: none;
+    border-radius: 2rem;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 3rem;
+    display: block;
+
+    font-size: var(--text-md);
+    font-weight: normal;
+    text-decoration: none;
+    text-wrap: nowrap;
+    text-align: center;
+
+    cursor: pointer;
+    transition: color 150ms ease-in-out 0s, background-color 150ms ease-in-out 0s;
+}
+
+.btn-primary {
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    color: var(--color-text-bright);
+    background-color: var(--color-primary-light);
+}
+
+.btn-secondary {
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+}
+
+.btn-secondary:hover {
+    color: var(--color-text-bright);
+    background-color: var(--color-secondary-light);
+}

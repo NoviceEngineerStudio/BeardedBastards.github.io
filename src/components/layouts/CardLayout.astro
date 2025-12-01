@@ -6,5 +6,11 @@ export type CardLayoutProps = Props;
 ---
 
 <RootLayout {...Astro.props}>
-    <slot />
+    <slot name="non-card" />
+
+    <div id="card-container">
+        <slot />
+    </div>
+
+    <div id="card-dot-map-container" />
 </RootLayout>
