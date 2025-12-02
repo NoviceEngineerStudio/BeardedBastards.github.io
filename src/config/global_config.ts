@@ -31,19 +31,7 @@ const global_config: GlobalConfig = {
     static_links: [
         {
             rel: "preload",
-            href: "/fonts/UnifrakturMaguntia/UnifrakturMaguntia-Regular.ttf",
-            as: "font",
-            type: "font/ttf",
-            crossorigin: "anonymous"
-        }, {
-            rel: "preload",
-            href: "/fonts/Unlock/Unlock-Regular.ttf",
-            as: "font",
-            type: "font/ttf",
-            crossorigin: "anonymous"
-        }, {
-            rel: "preload",
-            href: "/fonts/Urbanist/Urbanist-VariableFont_wght.ttf",
+            href: "/fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf",
             as: "font",
             type: "font/ttf",
             crossorigin: "anonymous"

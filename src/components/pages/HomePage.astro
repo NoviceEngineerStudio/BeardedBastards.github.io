@@ -1,59 +1,8 @@
 ---
 import "../../styles/home_page.css";
-import bbgs_logo from "../../assets/logos/bbgs.webp";
-import CardLayout from "../layouts/CardLayout.astro";
 import type { Languages } from "../../config/language_config";
-import Image from "astro/components/Image.astro";
-import translate from "../../utils/content/translation";
 
 interface Props {
     language: Languages;
 };
 ---
-
-<CardLayout language={Astro.props.language}>
-    <!-- * Home Page 3D Canvas * -->
-    <home-page-canvas slot="non-card" />
-
-    <!-- * Introduction Card * -->
-    <section id="intro-card">
-        <Image
-            src={bbgs_logo}
-            alt="Intro-BBGS-Logo"
-            class="intro-logo"
-            loading="eager"
-        />
-
-        <div>
-            <h1 class="text-shadow font-decor text-bright text-2xl weight-normal text-center">
-                {translate(Astro.props.language, "home_page", "intro_heading")}
-            </h1>
-
-            <h2 class="text-shadow font-heading text-xl weight-normal text-center">
-                {translate(Astro.props.language, "home_page", "intro_subheading")}
-            </h2>
-        </div>
-
-        <div class="intro-btn-container">
-            <a class="btn btn-primary box-shadow" href="#contact-card">
-                {translate(Astro.props.language, "home_page", "intro_cta_get_quote")}
-            </a>
-
-            <a class="btn btn-secondary box-shadow" href="#cert-card">
-                {translate(Astro.props.language, "home_page", "intro_cta_see_more")}
-            </a>
-        </div>
-    </section>
-
-    <!-- * Certifications Card * -->
-    <section id="cert-card">
-        
-    </section>
-
-    <!-- * Contact Card * -->
-    <section id="contact-card">
-
-    </section>
-</CardLayout>
-
-<script src="../../scripts/home_page.ts" />
