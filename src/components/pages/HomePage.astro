@@ -129,10 +129,25 @@ interface Props {
             <div class="bbgs-divider" />
         </div>
 
-        <div>
+        <div class="service-card-container">
             {services.map((service) => (
-                <div>
+                <div class="service-card">
+                    <div
+                        class="service-card-preview"
+                        style={`--service-card-preview-image: url('${service.preview_image.src}');`}
+                    />
 
+                    <div class="service-card-content-container">
+                        <h3 class="text-lighter text-md">
+                            {translate(Astro.props.language, "services", service.name_translation_key)}
+                        </h3>
+
+                        <div class="service-card-divider" />
+
+                        <p>
+                            {translate(Astro.props.language, "services", service.description_translation_key)}
+                        </p>
+                    </div>
                 </div>
             ))}
         </div>
