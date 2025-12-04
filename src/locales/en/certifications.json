@@ -1,4 +1,7 @@
 {
-    "example_title": "Example Degree",
-    "example_institution": "Example University"
+    "associates_degree_title": "A.S. Firearms Technology",
+    "associates_degree_institution": "Sonoran Desert Institute",
+
+    "sergeant_title": "Sergeant Rank (E5)",
+    "sergeant_institution": "U.S. Army"
 }

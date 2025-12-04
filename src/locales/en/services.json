@@ -1,4 +1,25 @@
 {
-    "example_title": "Service Title",
-    "example_description": "This is where you might explain this service. Give details about what you can offer, as well as a general overview of what the process might be."
+    "inspect_title": "Inspection",
+    "inspect_description": "A thorough assessment of the firearm to evaluate safety, functionality, and overall condition. This includes checking critical components for wear or damage, identifying potential issues, and providing recommendations for maintenance or repair.",
+
+    "scope_mount_title": "Scope Mounting",
+    "scope_mount_description": "Proper installation and alignment of scope bases and rings to ensure a secure fit and reliable accuracy. Includes leveling the optic, torqueing hardware to spec, and confirming proper eye relief.",
+
+    "part_installation_title": "Part Installation",
+    "part_installation_description": "Installation of customer-supplied or shop-provided components such as triggers, stocks, barrels, sights, rails, and other accessories. All parts are fitted with precision to ensure proper function and performance.",
+
+    "scope_ring_lapping_title": "Scope Ring Lapping",
+    "scope_ring_lapping_description": "Precision lapping of scope rings to increase contact surface area and reduce stress on the optic tube. Improves alignment, grip, and long-term stability of mounted optics.",
+
+    "basic_cleaning_title": "Basic Cleaning",
+    "basic_cleaning_description": "Routine cleaning of the exterior and accessible internal components. Includes bore cleaning, lubrication of major moving parts, and removal of light carbon buildup to maintain reliable operation.",
+
+    "deep_cleaning_title": "Deep Cleaning",
+    "deep_cleaning_description": "A more comprehensive service for heavily used or neglected firearms. Treats internal fouling, carbon buildup, rust, and residue in hard-to-reach areas. Firearm is fully cleaned, inspected, lubricated, and function-checked.",
+
+    "ultrasonic_cleaning_title": "Ultrasonic Cleaning",
+    "ultrasonic_cleaning_description": "Advanced cleaning using an ultrasonic bath to remove carbon, fouling, and contaminants from even the smallest crevices. Ideal for deep restoration, corrosion removal, and bringing internal components back to optimal cleanliness.",
+
+    "hydrographics_title": "Hydrographics",
+    "hydrographics_description": "Custom hydro-dip coating that applies durable, decorative patterns or finishes to firearm components. A wide variety of designs available, providing a personalized look while maintaining protection and durability."
 }

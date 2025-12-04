@@ -1,4 +1,5 @@
-import LAURELS from "../assets/icons/laurels.svg";
+import email_icon from "../assets/icons/email.svg";
+import phone_icon from "../assets/icons/phone.svg";
 
 interface ContactInformation {
     icon: ImageMetadata;
@@ -8,17 +9,13 @@ interface ContactInformation {
 
 const contact_information: ContactInformation[] = [
     {
-        icon: LAURELS,
-        information: "(405) 555-1234",
-        href: "tel:+14055551234"
+        icon: email_icon,
+        information: "ashley.riggle1@icloud.com",
+        href: "mailto:ashley.riggle1@icloud.com"
     }, {
-        icon: LAURELS,
-        information: "(405) 555-1234",
-        href: "tel:+14055551234"
-    }, {
-        icon: LAURELS,
-        information: "(405) 555-1234",
-        href: "tel:+14055551234"
+        icon: phone_icon,
+        information: "(405) 827-6387",
+        href: "tel:+14058276387"
     }
 ];
 

@@ -98,7 +98,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: start;
-    align-items: center;
+    align-items: stretch;
     gap: 2rem;
 }
 
@@ -122,6 +122,13 @@
     background-repeat: no-repeat;
 }
 
+.service-card-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 2rem;
+}
+
 .service-card-divider {
     width: 100%;
     border-bottom: 2px solid var(--color-primary);
@@ -133,6 +140,10 @@
     gap: 0.5rem;
 
     padding: 2rem 1rem;
+}
+
+.service-card-paragraph {
+    text-align: justify;
 }
 
 .contact-title-container {

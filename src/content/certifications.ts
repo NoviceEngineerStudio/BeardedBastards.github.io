@@ -7,17 +7,11 @@ interface Certification {
 
 const certifications: Certification[] = [
     {
-        title_translation_key: "example_title",
-        issuer_translation_key: "example_institution"
+        title_translation_key: "associates_degree_title",
+        issuer_translation_key: "associates_degree_institution"
     }, {
-        title_translation_key: "example_title",
-        issuer_translation_key: "example_institution"
-    }, {
-        title_translation_key: "example_title",
-        issuer_translation_key: "example_institution"
-    }, {
-        title_translation_key: "example_title",
-        issuer_translation_key: "example_institution"
+        title_translation_key: "sergeant_title",
+        issuer_translation_key: "sergeant_institution"
     }
 ];
 
