@@ -7,15 +7,26 @@ import translate from "../../utils/content/translation";
 import laurel_icon from "../../assets/icons/laurels.svg";
 import certifications from "../../content/certifications";
 import type { Languages } from "../../config/language_config";
+import embed_bbgs_logo from "../../assets/logos/embed_bbgs.webp";
 import contact_information from "../../content/contact_information";
 import owner_signature from "../../assets/images/owner_signature.svg";
 import owner_portrait from "../../assets/images/ashley_deployment.webp";
 import { contact_link, services_link } from "../../config/naviagtion_config";
-import embed_bbgs_logo from "../../assets/logos/embed_bbgs.webp";
 
 interface Props {
     language: Languages;
 };
+
+const showcase_images: Record<string, {
+    default: ImageMetadata
+}> = import.meta.glob<{
+    default: ImageMetadata
+}>(
+    "../../assets/showcase/*.{png,jpg,jpeg,webp,svg}",
+    {
+        eager: true
+    }
+);
 ---
 
 <NavLayout class="home-body" language={Astro.props.language}>
@@ -200,6 +211,24 @@ interface Props {
             ))}
         </div>
     </section>
+
+    <!-- * Work Showcase Carousel * -->
+    <div class="showcase-carousel">
+        <div class="showcase-scroll-track">
+            {Array.from({ length: 2 }).map(() => (
+                <div class="showcase-group">
+                    {Object.entries(showcase_images).map(([path, data]) => (
+                        <Image
+                            src={data.default}
+                            alt={`Showcase-${path}`}
+                            loading="lazy"
+                            class="showcase-image"
+                        />
+                    ))}
+                </div>
+            ))}
+        </div>
+    </div>
 
     <script src="../../scripts/home_page.ts" />
 </NavLayout>
