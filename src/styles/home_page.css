@@ -234,12 +234,8 @@ body {
     min-width: 200%;
     height: 100%;
 
-    animation: scroll-left 10s linear infinite;
+    animation: scroll-left 60s linear infinite;
     will-change: transform;
-}
-
-.showcase-scroll-track:hover {
-    animation-play-state: paused;
 }
 
 .showcase-group {
